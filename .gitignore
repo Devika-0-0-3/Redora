@@ -1,21 +1,13 @@
 # Ignore node_modules
 node_modules/
 
-# Ignore Tailwind generated output CSS
+# Ignore Tailwind output
 output.css
 
-# Ignore build outputs (optional)
+# Optional: Ignore build artifacts or logs
 dist/
-build/
+*.log
 
-# Ignore system files
+# Optional: Ignore system files
 .DS_Store
 Thumbs.db
-
-# Ignore environment files (if any)
-.env
-.env.local
-.env.*.local
-
-# Do NOT ignore Tailwind config
-# So do NOT include: tailwind.config.js
