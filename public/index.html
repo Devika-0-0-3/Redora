@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/boxicons/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
+    <link rel="icon" href="../assets/img/fav.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="output.css">
+    <title>READORA</title>
+</head>
+<body class="bg-slate-100">
+
+    <nav class="bg-zinc-800 p-4 shadow-lg sticky top-0">
+       <div class="container mx-auto flex justify-between items-center ">
+            
+            <div class="text-white  flex items-center">
+                <img src="../assets/img/icon.jpg" alt="icon" class="mr-2 w-10 g10">
+                <a href="#" class="text-3xl font-bold">Readora</a>
+                
+            </div>
+
+            <div class="hidden md:flex space-x-8 ">
+                <a href="#home" class="text-gray-300 hover-underline">Home</a>
+                <a href="#about" class="text-gray-300 hover-underline">About</a>
+                <a href="#books" class="text-gray-300 hover-underline">Books</a>
+                <a href="#testimony" class="text-gray-300 hover-underline">Testimony</a>
+                <a href="#contact" class="text-gray-300 hover-underline">Contact</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="ham" class="text-gray-300 hover:text-white text-xl">
+                    <i class="ri-menu-line "></i>
+                </button>
+            </div>
+        </div> 
+
+        <div id="mobile-menu" class="md:hidden mt-8 hidden">
+            <a href="#home" class="text-gray-300 block hover:text-white p-2">Home</a>
+            <a href="#about" class="text-gray-300 block hover:text-white p-2">About</a>
+            <a href="#books" class="text-gray-300 block hover:text-white p-2">Books</a>
+            <a href="#testimony" class="text-gray-300 block hover:text-white p-2">Testimony</a>
+            <a href="#contact" class="text-gray-300 block hover:text-white p-2">Contact</a>
+       </div>
+
+       
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class=" h-screen flex items-center justify-center 
+    bg-cover bg-center bg-no-repeat bg-fixed" 
+    style="background-image:linear-gradient(rgba(0,0,0,1),rgb(0, 0, 0,0.1)), url(../assets/img/bg.jpg)">
+
+       <div class="md:w-1/2 text-center text-white p-8">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Discover Your Next Favorite Book</h1>
+            <p class="text-xl md:lg mb-6 ">Dive into worlds of wonder, wisdom, and imagination. Explore bestselling books, timeless classics, and hidden treasures — stories that stay with you forever.</p>
+            <button class="btn mr-4">Show Now</button>
+            <button class="btn">Explore</button>
+        </div> 
+
+    </section>
+
+    <!--About-->
+    <section id="about" class="container mx-auto mt-24">
+        <div class="flex flex-col md:flex-row items-center gap-8 p-4 md:p-0">
+            <div class="md:w-1/2 mb-4 md:mb-0 border border-dashed border-black p-2">
+                <img src="../assets/img/about.png" alt="about">
+            </div>
+
+            <div class="md:w-1/2 md:ml-4">
+                <span  class="text-slate-700 block mb-4">What we do</span>
+                <h2 class="text-4xl font-bold mb-4">About Us</h2>
+                <p class="text-gray-700 mb-4 leading-8">Welcome to Redora — where stories come alive and readers find their perfect match. At Redora, we’re a passionate team of book lovers, curators, and creatives dedicated to bringing the joy of reading to everyone. Our carefully selected collection includes everything from bestselling novels, thought-provoking non-fiction, children’s favorites, academic guides, self-help books, to rare literary gems. Whether you're a casual reader or a dedicated bookworm, we’ve got something for every mind and mood.</p> 
+                <p class="text-gray-700 mb-4 leading-8">With a user-friendly shopping experience, fast delivery, Redora is more than a bookstore — it’s a community built by readers, for readers.</p>
+                <div>
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-x-fill"></i>
+                    <i class="ri-instagram-fill"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Books-->
+    <section id="books" class="container mx-auto py-12 mt-16 ">
+        <h2 class="text-3xl font-bold mb-8 text-center">BOOKS</h2>
+        <div class="grid md:grid-cols-3 p-4 md:0 gap-8">
+            <div class="shadow-lg rounded-lg overflow-hidden">
+                
+                    <img src="../assets/img/bk1.jpg" class="w-full h-80 object-contain hover:scale-[1.05] transition duration-300 " alt="bk1">
+                
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">A Tale of Two Cities</h2>
+                    <p class="text-gray-700 mb-4">A gripping tale of love, sacrifice, and redemption set during the French Revolution’s chaos.</p>
+                    <del class="mr-8 text-sm text-slate-400">$200</del><span class="text-xl">$100</span>
+                </div>
+
+            </div>
+
+            <div class="shadow-lg rounded-lg overflow-hidden">
+                <img src="../assets/img/bk2.jpg" class="w-full h-80 object-contain hover:scale-[1.05] transition duration-300" alt="bk1">
+
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">The Little Prince</h2>
+                    <p class="text-gray-700 mb-4">A poetic tale exploring loneliness and human nature through a child’s eyes, reminding us what truly matters is invisible to the eye.</p>
+                    <del class="mr-8 text-sm text-slate-400">$250</del><span class="text-xl">$150</span>
+                </div>
+
+            </div>
+
+            <div class="shadow-lg rounded-lg overflow-hidden">
+                <img src="../assets/img/bk3.jpg" class="w-full h-80 object-contain hover:scale-[1.05] transition duration-300" alt="bk1">
+
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">The Alchemist</h2>
+                    <p class="text-gray-700 mb-4">A soul-stirring tale of dreams, destiny, and self-discovery, guiding a shepherd on a journey to find his true treasure.</p>
+                    <del class="mr-8 text-sm text-slate-400">$300</del><span class="text-xl">$200</span>
+                </div>
+
+            </div>
+
+            <div class="shadow-lg rounded-lg overflow-hidden">
+                <img src="../assets/img/bk4.jpg" class="w-full h-80 object-contain hover:scale-[1.05] transition duration-300" alt="bk1">
+
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Harry Potter and the Philosopher's Stone</h2>
+                    <p class="text-gray-700 mb-4">A magical journey begins as a young boy discovers his true identity, attends wizarding school, and faces his destiny with courage.</p>
+                    <del class="mr-8 text-sm text-slate-400">$400</del><span class="text-xl">$200</span>
+                </div>
+
+            </div>
+
+            <div class="shadow-lg rounded-lg overflow-hidden">
+                <img src="../assets/img/bk5.jpg" class="w-full h-80 object-contain hover:scale-[1.05] transition duration-300" alt="bk1">
+
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">And Then There Were None</h2>
+                    <p class="text-gray-700 mb-4">A gripping mystery where strangers face justice for hidden crimes, unfolding with suspense, guilt, and unexpected twists until no one remains.</p>
+                    <del class="mr-8 text-sm text-slate-400">$500</del><span class="text-xl">$300</span>
+                </div>
+
+            </div>
+
+            <div class="shadow-lg rounded-lg overflow-hidden">
+                <img src="../assets/img/bk6.webp" class="w-full h-80 object-contain hover:scale-[1.05] transition duration-300" alt="bk1">
+
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Think Like A Monk</h2>
+                    <p class="text-gray-700 mb-4">Think Like a Monk teaches how to find peace, purpose, and clarity by applying monk wisdom to modern life.</p>
+                    <del class="mr-8 text-sm text-slate-400">$200</del><span class="text-xl">$150</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Testimony-->
+    <section id="testimony" class="container mx-auto mt-20">
+        <h2 class="text-3xl font-bold mb-8 text-center">TESTIMONY</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <div class="bg-white p-6 rounded-lg shadow-md flex items-center flex-col">
+                <img src="../assets/img/f1.jpg" class="h-20 w-20 rounded-full mb-4 object-center" alt="f1">
+                <p class="text-gray-700 mb-4 text-center">“Redora offers an amazing collection of books! Easy to navigate, quick delivery, and great prices. I found all my favorite titles in one place. Highly recommend!”</p>
+                <p class="text-gray-600 font-semibold">- Sarah J.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md flex items-center flex-col">
+                <img src="../assets/img/f2.avif" class="h-20 w-20 rounded-full mb-4 object-center" alt="f1">
+                <p class="text-gray-700 mb-4 text-center">“I love shopping at Redora! The website is user-friendly, and the book quality exceeded my expectations. Customer service was helpful and prompt. Will definitely buy again!”</p>
+                <p class="text-gray-600 font-semibold">- John Jacob</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md flex items-center flex-col">
+                <img src="../assets/img/f3.jpg" class="h-20 w-20 rounded-full mb-4 object-center" alt="f1">
+                <p class="text-gray-700 mb-4 text-center">“Redora made finding rare and classic books so simple. The secure checkout and fast shipping impressed me. Perfect for every book lover looking for variety and value.”</p>
+                <p class="text-gray-600 font-semibold">- Natalie Nutker</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer id="contact" class="bg-zinc-800 text-white py-12 mt-20">
+        <div class="container flex flex-col md:flex-row justify-between ">
+
+            <div class="mb-8 ">
+                <a href="#" class="text-3xl font-bold text-white">Readora</a>
+            </div>
+
+            <div class="mt-8">
+                <h4 class="text-lg font-semibold mb-4">Links</h4>
+                <ul>
+                    <li><a href="#" class="block hover:text-gray-400 mb-2">Home</a></li>
+                    <li><a href="#" class="block hover:text-gray-400 mb-2">About</a></li>
+                    <li><a href="#" class="block hover:text-gray-400 mb-2">Books</a></li>
+                    <li><a href="#" class="block hover:text-gray-400 mb-2">Testimony</a></li>
+                </ul>
+            </div>
+
+            <div class="mt-8">
+                <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                <ul>
+                    <li><a href="#" class="block hover:text-gray-400 mb-2">FAQ</a></li>
+                    <li><a href="#" class="block hover:text-gray-400 mb-2">Blog</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="mt-8">
+                <h4 class="text-lg font-semibold mb-4">Socials</h4>
+                <ul>
+                    <li><a href="#" class="block hover:text-gray-400 mb-2">1800-244-433</a></li>
+                    <li><a href="#" class="block hover:text-gray-400 mb-2">redoraread3@gmail.com</a></li>
+                </ul>
+
+                <div>
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-x-fill"></i>
+                    <i class="ri-instagram-fill"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+<script src="app.js"></script>    
+</body>
+</html>

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover-underline{
+    @apply relative inline-flex items-center;
+}
+
+.hover-underline::after{
+    @apply absolute left-0 bottom-0 block h-0.5 bg-current transition-all duration-300 ease-in-out;
+    content:'' ;
+    width:0;
+}
+
+.hover-underline:hover::after{
+    width:100%;
+}
+
+.btn{
+    @apply bg-green-500 hover:bg-green-400 transition duration-300 text-black font-bold py-2 px-6;
+}
